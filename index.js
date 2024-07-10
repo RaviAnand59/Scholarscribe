@@ -50,7 +50,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Add authentication routes
-app.use('/auth', authRouter);
+// app.use('/auth', authRouter);
 // app.use('/s3', s3Router);
 
  
