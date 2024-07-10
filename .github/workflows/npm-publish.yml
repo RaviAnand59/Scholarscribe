@@ -24,8 +24,8 @@ jobs:
       run: |
         echo "ACCESS_KEY_ID=${{ secrets.ACCESS_KEY_ID }}" >> $GITHUB_ENV
         echo "SECRET_ACCESS_KEY=${{ secrets.SECRET_ACCESS_KEY }}" >> $GITHUB_ENV
-        echo "CLIENT_ID=${{ secrets.CLIENTID }}" >> $GITHUB_ENV
-        echo "CLIENT_SECRET=${{ secrets.CLIENTSECRET }}" >> $GITHUB_ENV
+        echo "clientID=${{ secrets.CLIENTID }}" >> $GITHUB_ENV
+        echo "clientSecret=${{ secrets.CLIENTSECRET }}" >> $GITHUB_ENV
         echo "ADMIN_ID=${{ secrets.ADMIN_ID }}" >> $GITHUB_ENV
         echo "ADMIN_PASSWORD=${{ secrets.ADMIN_PASSWORD }}" >> $GITHUB_ENV
     - run: pm2 restart backendserver
