@@ -1,4 +1,4 @@
-require("dotenv").config();
+orequire("dotenv").config();
 const express = require("express");
 // const { DynamoDBClient, ExecuteStatementCommand } = require("@aws-sdk/client-dynamodb");
 const userRouter = require('./routes/user');
@@ -41,7 +41,7 @@ app.listen(PORT, () => {
 
 app.get("/",(req,res)=> { 
     
-    res.send("Hi")
+    res.send("Hello")
 
 });
 app.use('/user', userRouter);
